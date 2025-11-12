@@ -1,0 +1,9 @@
+services:
+  python:
+    image: python3.10
+    build: .
+    container_name: python3.10
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    tty: true
